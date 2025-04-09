@@ -5,7 +5,7 @@ function App() {
   const [message, setMessage] = useState('');
 
   useEffect(() => {
-    fetch('http://localhost:5000')
+    fetch('http://localhost:https://vercel-backend-ten-phi.vercel.app/')
       .then(response => response.text())
       .then(data => setMessage(data))
       .catch(error => console.error('Error:', error));
