@@ -5,7 +5,8 @@ function App() {
   const [message, setMessage] = useState('');
 
   useEffect(() => {
-    fetch('http://localhost:https://vercel-backend-ten-phi.vercel.app/')
+    // Correct URL for your Vercel backend
+    fetch('https://vercel-backend-ten-phi.vercel.app/')
       .then(response => response.text())
       .then(data => setMessage(data))
       .catch(error => console.error('Error:', error));
@@ -14,6 +15,7 @@ function App() {
   return (
     <div className="App">
       <h1>hello frontend</h1>
+      <p>{message}</p>
     </div>
   );
 }
